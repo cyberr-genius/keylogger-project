@@ -6,6 +6,5 @@ def controlMouse():
 
 def controlKeyboard():
     keyboard=keyboardController()
-    keyboard.type("i'm a freaking genius")
+    keyboard.type("i'm a super genius")
 controlKeyboard()
-

