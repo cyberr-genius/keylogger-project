@@ -1,1 +1,2 @@
-i'm proud of me 
+the log file were the keystrokes are recorded. 
+for a simple test replace the usermail and password variable
